@@ -1,0 +1,154 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-container {
+    background-color: #40e0d0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px;
+}
+
+.nav-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-container ul li {
+    margin: 0 15px;
+}
+
+.nav-container ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+h2, h3 {
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    animation: glow 5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #40e0d0;
+    }
+    to {
+        box-shadow: 0 0 20px #40e0d0;
+    }
+}
+
+h2 {
+    background-color: #add8e6;
+}
+
+h3 {
+    background-color: #4169e1;
+    color: white;
+}
+
+.left-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100x;
+    background-color: #333;
+    padding-top: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: column;
+}
+
+.left-nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: column;
+}
+
+.left-nav ul li {
+    margin-bottom: 10px;
+}
+
+.left-nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.content {
+    width: 80%;
+    text-align: left;
+
+}
+
+
+.footer-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.footer-style h3 {
+    margin-top: 0;
+}
+
+.footer-style ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer-style ul li {
+    margin: 10px 0;
+}
+
+
+.footer-style ul li a {
+    color: #40e0d0;
+    text-decoration: none;
+}

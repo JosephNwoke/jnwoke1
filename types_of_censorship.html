@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Types of Censorship</title>
+    <link rel="icon" type="image/x-icon" href="type.ico">
+    <style>
+        .content img {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            max-height: 450px;
+        }    
+        body, .main-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="types_of_censorship.html">Types of Censorship</a></li>
+                <li><a href="impact_on_creators.html">Impact on Creators</a></li>
+                <li><a href="viewer_perspective.html">Viewer Perspective</a></li>
+                <li><a href="Legal_ethical_considerations.html">Legal & Ethical Considerations</a></li>
+                <li><a href="pro_con.html">Pros & Cons</a></li>
+            </ul>
+        </nav>
+        <nav class="left-nav">
+            <ul>
+                <li><a href="https://www.comscore.com/ger/Insights/Blog/The-Top-Ten-Burning-Issues-in-Digital">Other Topics</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="current-page">
+        <h2>Types of Censorship</h2>
+    </div>
+    <main class="main-container">
+        <article class="content">
+            <h3>Demonetization and Limited Monetization</h3>
+            <p>Demonetization and limited monetization significantly impact content creators by reducing their revenue streams. YouTube's advertiser-friendly guidelines often target content related to sensitive topics such as news reporting, political discussions, or controversial issues, leading to decreased ad revenue for creators. This form of censorship can hinder creators' ability to sustain their channels and produce quality content due to financial strain. Moreover, limited monetization may restrict the promotion of videos, further decreasing their visibility and engagement among audiences. Content creators often face challenges in navigating these monetization policies and adapting their content to comply with platform guidelines while maintaining their creative freedom.</p>
+            <img src="monetization.jpg" alt="Demonetization and Limited Monetization">
+            <h3>Age-Restriction and Limited Visibility</h3>
+            <p>Age-restriction and limited visibility measures are implemented by YouTube to regulate access to videos containing explicit language, violence, or mature themes. While age-restricted videos aim to protect younger audiences from potentially harmful content, they may also experience reduced visibility in search results, recommendations, or trending sections. This limitation in visibility can hinder the video's reach and engagement, impacting the creator's ability to connect with their audience effectively. Content creators must strike a balance between addressing mature themes and ensuring their content remains accessible to their intended audience. Furthermore, navigating age-restriction policies requires creators to consider the potential impact on their content's reach and monetization opportunities.</p>
+            <img src="agerestriction.png" alt="Demonetization and Limited Monetization">
+            <h3>Copyright Claims and Content ID Matches</h3> 
+            <p>Copyright claims and Content ID matches pose significant challenges for content creators when incorporating copyrighted material into their videos. These claims can result in demonetization, restricted access, or removal of the video, affecting the creator's ability to monetize and share their content. Content creators must understand copyright laws and fair use principles to avoid infringing on others' intellectual property rights. However, the subjective nature of copyright enforcement on platforms like YouTube can sometimes lead to false claims or disputes over ownership. To mitigate these risks, creators may need to seek permission, use royalty-free assets, or provide transformative commentary or critique when incorporating copyrighted material into their content.</p>
+            <img src="copyrightclaim.jpg" alt="Copyright Claims and Content ID Matches">
+            <h3>Community Guidelines Violations</h3>
+            <p>Violating YouTube's community guidelines, including hate speech, harassment, misinformation, or graphic content, can result in the removal or age-restriction of videos. These guidelines aim to maintain a safe and respectful platform environment, but their subjective interpretation can sometimes lead to content being unfairly flagged or removed. Content creators must familiarize themselves with YouTube's community guidelines and strive to create content that complies with these standards. However, navigating these guidelines can be challenging due to their evolving nature and the platform's inconsistent enforcement practices. Creators may need to adapt their content strategies and communication styles to ensure compliance while preserving their creative expression and authenticity.</p>
+            <img src="communityguide.jpg" alt="Community Guidelines Violations">
+            <h3>Limited Reach and Suppression</h3>
+            <p>Certain topics or creators may experience limited reach or suppression in search results, recommendations, or trending sections on YouTube. Algorithmic biases or manual intervention by YouTube can result in content being unfairly targeted or marginalized. This suppression can hinder the discoverability and growth of channels, impacting creators' ability to attract and retain an audience. Content creators must remain vigilant against algorithmic biases and advocate for transparent and equitable content distribution practices on the platform. Additionally, diversifying content strategies and engaging with alternative promotion methods can help mitigate the impact of limited reach and suppression on channel growth and visibility.</p>
+            <img src="algorithim_bias.jpg" alt"Limited Reach and Suppression">
+        </article>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-style">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="review.html">Leave a Review</a></li>
+                <li><a href="citations.html">Citations & Sources</a></li>
+            </ul>
+        </div>
+    </footer>
+    <audio id="background-music" autoplay loop>
+        <source src="music.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button class="music-button" id="click-here">Click Here</button>
+    <script>
+        var audio = document.getElementById("background-music");
+        var musicButton = document.getElementById("click-here");
+        musicButton.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                musicButton.textContent = "Mute Music";
+            } else {
+                audio.pause();
+                musicButton.textContent = "Unmute Music";
+            }
+        });
+    </script>
+</body>
+</html>
+

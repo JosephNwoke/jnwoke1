@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Viewer Perspective</title>
+    <link rel="icon" type="image/x-icon" href="view.ico">
+    
+    <style>
+    </style>
+    
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="types_of_censorship.html">Types of Censorship</a></li>
+                <li><a href="impact_on_creators.html">Impact on Creators</a></li>
+                <li><a href="viewer_perspective.html">Viewer Perspective</a></li>
+                <li><a href="Legal_ethical_considerations.html">Legal & Ethical Considerations</a></li>
+                <li><a href="pro_con.html">Pros & Cons</a></li>
+
+            </ul>
+        </nav>
+
+<nav class="left-nav">
+        <ul>
+            <li><a href="https://www.comscore.com/ger/Insights/Blog/The-Top-Ten-Burning-Issues-in-Digital">Other Topics</a></li>
+            
+        </ul>
+            
+    </nav>
+        
+    </div>
+    <div class="current-page">
+        <h2>Viewer's Perspective</h2>
+    </div>
+    <main class="main-container">
+               <article class="content">
+    <h3>Impact of Censorship from the Viewer's Perspective</h3>
+<p>
+    Censorship on content platforms like YouTube significantly influences viewers and their online experience. From restricted access to diverse content to diminished engagement and trust, censorship's effects on viewers are wide-ranging.
+</p>
+
+<h3>1. Restricted Access to Diverse Content</h3>
+<p>
+    Censorship policies, aimed at curbing misinformation or hate speech, can lead to the removal or suppression of valuable content. This can limit viewers' exposure to diverse ideas and viewpoints, hindering their ability to engage in meaningful discourse. When platforms prioritize certain content over others, viewers may miss out on valuable perspectives that could contribute to a more well-rounded understanding of various issues.
+</p>
+
+<h3>2. Diminished Engagement and Trust</h3>
+<p>
+    When content is removed without transparent explanations, viewers may lose trust in the platform's moderation practices. This can lead to decreased engagement and a sense of disillusionment among viewers, impacting the platform's community dynamics. Viewers may feel uncertain about what content is safe to engage with, leading to self-censorship and a reluctance to participate in discussions. As a result, platforms may experience a decline in user activity and community interaction, affecting the overall vibrancy of the online space.
+</p>
+
+<h3>3. Influence on Information Consumption</h3>
+<p>
+    Censorship can shape viewers' information consumption habits by limiting exposure to certain topics or perspectives. This can lead to a skewed understanding of complex issues and hinder the development of informed opinions among viewers. When platforms prioritize content based on popularity or advertiser interests, viewers may be more likely to encounter biased or sensationalized information, further exacerbating misinformation and polarizing viewpoints. Consequently, viewers may struggle to discern credible sources from unreliable ones, making it challenging to navigate the vast landscape of online information effectively.
+</p>
+
+<p>
+    In summary, censorship's impact on viewers extends beyond restricted access to content. It affects engagement, trust, and the formation of informed opinions, highlighting the importance of transparent and equitable content moderation practices. Platforms must prioritize openness and accountability in their moderation processes to foster a more inclusive and intellectually stimulating online environment for viewers worldwide.
+</p>
+
+        </article>
+    </main>
+    <footer class="footer-container">
+        <div class="footer-style">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="review.html">Leave a Review</a></li>
+                <li><a href="citations.html">Citations & Sources</a></li>
+            </ul>
+        </div>
+        <!-- You can include a contact form or other user engagement elements here -->
+    </footer>
+     <audio id="background-music" autoplay loop>
+        <source src="music.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Music Button -->
+    <button class="music-button" id="click-here">Click Here</button>
+
+    <script>
+        // Get the audio element
+        var audio = document.getElementById("background-music");
+
+        // Get the music toggle button
+        var musicButton = document.getElementById("click-here");
+
+        // Add event listener to toggle button
+        musicButton.addEventListener("click", function() {
+            // Check if audio is playing
+            if (audio.paused) {
+                // If paused, play audio
+                audio.play();
+                musicButton.textContent = "Mute Music";
+            } else {
+                // If playing, pause audio
+                audio.pause();
+                musicButton.textContent = "Unmute Music";
+            }
+        });
+    </script>
+    <div class="copyright">
+        <h2>Web Development Project By Joseph Nwoke | &copy; 2024 All Rights Reserved</h2>
+    </div>
+</body>
+</html>

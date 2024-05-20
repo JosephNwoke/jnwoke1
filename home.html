@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css">
+    <title>Censorship on YouTube</title>
+    <link rel="icon" type="image/x-icon" href="home.ico">
+    <style>
+    </style>
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="types_of_censorship.html">Types of Censorship</a></li>
+                <li><a href="impact_on_creators.html">Impact on Creators</a></li>
+                <li><a href="viewer_perspective.html">Viewer Perspective</a></li>
+                <li><a href="legal_ethics.html">Legal & Ethical Considerations</a></li>
+                <li><a href="pro_con.html">Pros & Cons</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="current-page">
+        <h2>Censorship on YouTube</h2>
+    </div>
+    <main class="main-container">
+
+        <section>
+            <h3>Understanding Censorship: What It Means for Content Creators</h3>
+            <p>Censorship refers to the suppression or restriction of speech, communication, or other forms of expression that may be considered objectionable, harmful, sensitive, or inconvenient by authorities or governing bodies. In the context of content creation, particularly on platforms like YouTube, censorship can take many forms, including the removal of videos, demonetization, shadow banning, or applying age restrictions. These actions are often driven by platform policies, government regulations, or societal norms aiming to protect audiences from content deemed inappropriate or offensive.</p>
+        </section>
+
+        <section>
+            <h3>The Impact of Censorship in the Digital Age: Navigating YouTube's Policies</h3>
+            <p>In the digital age, censorship is particularly relevant due to the vast reach and influence of online platforms. YouTube, as one of the largest video-sharing platforms, serves millions of users worldwide, making it a critical space for communication, education, and entertainment. For content creators, understanding censorship is essential as it directly impacts their ability to reach audiences and generate revenue. Algorithms that flag and remove content can sometimes lack nuance, leading to the removal of legitimate content. This has significant implications for creators who rely on these platforms for their livelihood and for audiences who seek diverse perspectives.</p>
+        </section>
+
+        <section>
+            <h3>Balancing Creative Freedom and Platform Guidelines: Strategies for YouTube Creators</h3>
+            <p>Content creators must navigate these challenges by staying informed about platform guidelines and engaging in self-regulation to avoid violations. Additionally, the rise of alternative platforms and decentralized networks is a response to censorship concerns, offering creators more freedom but also posing new risks and uncertainties. Awareness and proactive management of content are crucial in maintaining a balance between creative expression and adhering to community standards, ensuring that creators can thrive while contributing positively to the digital ecosystem.</p>
+        </section>
+
+    </main>
+    <footer class="footer-container">
+        <div class="footer-style">
+            <h3>Useful Links</h3>
+            <ul>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="review.html">Leave a Review</a></li>
+                <li><a href="citations.html">Citations & Sources</a></li>
+            </ul>
+        </div>
+        <!-- You can include a contact form or other user engagement elements here -->
+    </footer>
+         <audio id="background-music" autoplay loop>
+        <source src="music.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button class="music-button" id="click-here">Click Here</button>
+
+    <script>
+        var audio = document.getElementById("background-music");
+
+        var musicButton = document.getElementById("click-here");
+        musicButton.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                musicButton.textContent = "Mute Music";
+            } else {
+                audio.pause();
+                musicButton.textContent = "Unmute Music";
+            }
+        });
+    </script>
+    <div class="copyright">
+        <h2>Web Development Project By Joseph Nwoke | &copy; 2024 All Rights Reserved</h2>
+    </div>
+</body>
+</html>

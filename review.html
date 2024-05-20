@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave A Review</title>
+    <style>
+        body {
+            background-color:#152238;
+            color: white;
+            text-shadow: 0 0 5px #40e0d0;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .column {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .left-column {
+            background-color: #000000;
+            order: 1;
+        }
+
+        .right-column {
+            background-color: #152238;
+            color: white;
+            text-align: center;
+            order: 2;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: auto;
+            display: flex;
+        }
+
+        .feedback {
+            border-right: 10px solid #40e0d0;
+            padding-right: 20px;
+            flex: 1;
+        }
+
+        .feedback form {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .feedback form input[type="submit"] {
+            align-self: flex-end;
+        }
+
+        .video {
+            padding-left: 20px;
+        }
+
+        .video video {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="left-column feedback">
+            <h2>Feedback Form</h2>
+            <form id="feedback">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                <label for="description">Share Your Thoughts:</label><br>
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                <br><br>
+                <label for="rating">Rating:</label><br>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">1 Star</label><br>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">2 Stars</label><br>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">3 Stars</label><br>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">4 Stars</label><br>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">5 Stars</label><br><br>
+                <input type="submit" value="Submit Feedback">
+            </form>
+            
+        </div>
+        <div class="right-column video">
+            <h1>Watch This Video In The Meantime</h1>
+            <video controls>
+                <source src="clickme.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div>Source: <a href="https://www.youtube.com/watch?v=STIIHsXz0rc" target="_blank">WCAD News 8 (Youtube)</a></div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("feedback").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            var feedbackData = {};
+            for (var pair of formData.entries()) {
+                feedbackData[pair[0]] = pair[1];
+            }
+            console.log(feedbackData);
+            alert("I appreciate the feedback. Thank you");
+            this.reset();
+        });
+    </script>
+    <audio id="background-music" autoplay loop>
+        <source src="music.m4a" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button class="music-button" id="click-here">Toggle Music</button>
+
+    <script>
+        var audio = document.getElementById("background-music");
+        var musicButton = document.getElementById("click-here");
+        musicButton.addEventListener("click", function() {
+            if (audio.paused) {
+                audio.play();
+                musicButton.textContent = "Mute Music";
+            } else {
+                audio.pause();
+                musicButton.textContent = "Unmute Music";
+            }
+        });
+    </script>
+    <div class="copyright">
+        <h2>Web Development Project By Joseph Nwoke | &copy; 2024 All Rights Reserved</h2>
+    </div>
+</body>
+</html>
+
